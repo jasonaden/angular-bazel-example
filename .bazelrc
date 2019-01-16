@@ -19,3 +19,6 @@ build --define=compile=legacy
 # Turn off legacy external runfiles
 run --nolegacy_external_runfiles
 test --nolegacy_external_runfiles
+
+# Print subcommands
+# build --subcommands
