@@ -2,6 +2,8 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {RouterUpgradeModule} from '@angular/router/upgrade';
+import {UpgradeModule} from '@angular/upgrade/static';
 import {StoreModule} from '@ngrx/store';
 
 import {AppRoutingModule} from './app-routing.module';
@@ -12,8 +14,8 @@ import {todoReducer} from './reducers/reducers';
 @NgModule({
   declarations: [AppComponent],
   imports: [
-    AppRoutingModule, BrowserModule, BrowserAnimationsModule, MaterialModule,
-    StoreModule.forRoot({todoReducer})
+    AppRoutingModule, UpgradeModule, RouterUpgradeModule, BrowserModule, BrowserAnimationsModule,
+    MaterialModule, StoreModule.forRoot({todoReducer})
   ],
   exports: [AppComponent],
   bootstrap: [AppComponent],

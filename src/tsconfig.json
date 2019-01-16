@@ -12,6 +12,10 @@
             "../dist/bin/src",
         ],
         "experimentalDecorators": true,
-        "types": []
+        "types": [],
+        "baseUrl": ".",
+        "paths": {
+          "@angular/*": ["../../angular/packages/*"]
+        }
     }
 }

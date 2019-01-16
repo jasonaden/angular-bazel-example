@@ -3,12 +3,14 @@ import { NgModule } from '@angular/core';
 
 export const helloModuleId = './hello-world/hello-world.module#HelloWorldModule';
 export const todosModuleId = './todos/todos.module#TodosModule';
+export const angularJsModuleId = './angular-js/module#AngularJSModule';
 
 // These are lazy-loaded routes - note that we don't import the modules here
 // to avoid having an eager dependency on them.
 const routes: Routes = [
   {path: '', pathMatch: 'full', loadChildren: helloModuleId},
   {path: 'todos', pathMatch: 'full', loadChildren: todosModuleId},
+  {path: '**', loadChildren: './angular-js/module#AngularJSModule'}
 ];
 
 @NgModule({

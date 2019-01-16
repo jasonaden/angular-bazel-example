@@ -1,0 +1,18 @@
+load("@angular//:index.bzl", "ng_module")
+
+package(default_visibility = ["//visibility:public"])
+
+ng_module(
+    name = "angular-js",
+    srcs = glob(["*.ts"]),
+    tsconfig = "//src:tsconfig.json",
+    deps = [
+        "@angular//packages/core",
+        "@angular//packages/router",
+        "@angular//packages/router/upgrade",
+        "@angular//packages/upgrade/static",
+        "@rxjs",
+        "@npm//angular",
+        "@npm//angular-route"
+    ],
+)
