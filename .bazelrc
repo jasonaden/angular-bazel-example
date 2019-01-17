@@ -21,4 +21,4 @@ run --nolegacy_external_runfiles
 test --nolegacy_external_runfiles
 
 # Print subcommands
-# build --subcommands
+build --subcommands

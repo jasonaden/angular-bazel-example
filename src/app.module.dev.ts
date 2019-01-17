@@ -1,7 +1,6 @@
 
 import {NgModule, NgModuleFactoryLoader} from '@angular/core';
 
-import {AngularJSModuleNgFactory} from './angular-js/module.ngfactory';
 import * as routes from './app-routing.module';
 import {AppComponent} from './app.component';
 import {AppModule} from './app.module';
@@ -15,8 +14,6 @@ export class MyLoader extends NgModuleFactoryLoader {
         return Promise.resolve(HelloWorldModuleNgFactory);
       case routes.todosModuleId:
         return Promise.resolve(TodosModuleNgFactory);
-      case routes.angularJsModuleId:
-        return Promise.resolve(AngularJSModuleNgFactory);
       default:
         throw new Error(`Unrecognized route id ${id}`);
     }

@@ -1,16 +1,21 @@
-export const ROUTES = {
-  '/dashboard': {template: '<p>/dashboard in AngularJS config</p>'},
-  '/other-url': {
-    template:
-        `<p>/otherUrl in AngularJS configuration with data bindings {{ctrl.nowish | date : 'h:mm:ss'}}`,
-    controllerAs: 'ctrl',
-    controller: function($interval) {
+export const OTHER_URL = {
+  template:
+      `<p>/dashboard in AngularJS configuration with data bindings {{ctrl.nowish | date : 'h:mm:ss'}}`,
+  controllerAs: 'ctrl',
+  controller: [
+    '$interval', 'intervalTime',
+    function($interval, intervalTime) {
       const that = this;
-      $interval(updateDate, 1000);
+      $interval(updateDate, intervalTime);
       updateDate();
       function updateDate() {
         that.nowish = Date.now();
       }
     }
-  }
+  ]
+};
+
+export const ROUTES = {
+  '/other-url': {template: '<p>/other-url in AngularJS config</p>'},
+  '/dashboard': OTHER_URL
 };
