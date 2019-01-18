@@ -29,7 +29,7 @@ export class AppModule {
     console.group('AppModule Constructor');
     console.log(
         `This should happen before instantiating AngularJsRouteService ($route replacement)`);
-    const app = loadAngularJsApp();
+    // const app = loadAngularJsApp();
     // upgrade.bootstrap(document.body, [app.name]);
     console.groupEnd();
   }
