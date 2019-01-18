@@ -6,7 +6,6 @@ import {RouterUpgradeModule} from '@angular/router/upgrade';
 import {UpgradeModule} from '@angular/upgrade/static';
 import {StoreModule} from '@ngrx/store';
 
-import {loadAngularJsApp} from './angular-js/module';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {MaterialModule} from './material/material.module';

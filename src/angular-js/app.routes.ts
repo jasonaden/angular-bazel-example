@@ -1,4 +1,6 @@
-export const OTHER_URL = {
+import {PANEL_TEMPLATE} from './panel.template';
+
+export const DASHBOARD_CONFIG = {
   template: `
     <p>/dashboard in AngularJS</p>
 
@@ -27,5 +29,6 @@ export const OTHER_URL = {
 
 export const ROUTES = {
   '/other-url': {template: '<p>/other-url in AngularJS config</p>'},
-  '/dashboard': OTHER_URL
+  '/dashboard': DASHBOARD_CONFIG,
+  '/panel-example': {template: PANEL_TEMPLATE}
 };

@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {UpgradeModule} from '@angular/upgrade/static';
-import {loadAngularJsApp} from './angular-js/module';
+import {loadAngularJsApp} from './angular-js/app.module';
 
 @Component({selector: 'app-component', templateUrl: 'app.component.html'})
 export class AppComponent {

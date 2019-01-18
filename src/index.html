@@ -6,8 +6,53 @@
     <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.12/angular-material.min.css" />
+    <style>
+      .demo-md-panel {
+        min-height: 500px;
+      }
+
+      .demo-dialog-example {
+        background: white;
+        border-radius: 4px;
+        box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2),
+            0 13px 19px 2px rgba(0, 0, 0, 0.14),
+            0 5px 24px 4px rgba(0, 0, 0, 0.12);
+        width: 500px;
+      }
+
+      .demo-dialog-content {
+        padding: 0 15px;
+        width: 100%;
+      }
+
+      .demo-dialog-content img {
+        height: 300px;
+        margin: auto;
+      }
+
+      .demo-dialog-button {
+        width: 100%;
+      }
+
+      .demo-dialog-custom-animation-open {
+        opacity: 1;
+        transition: all 1s linear, opacity 1ms;
+        transform: rotate(390deg);
+      }
+
+      .demo-dialog-custom-animation-close {
+        opacity: 0;
+        transition: all 1s linear, opacity 1ms;
+        transform: rotate(0deg);
+      }
+    </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular-route.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular-animate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular-aria.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular-messages.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.12/angular-material.js"></script>
   </head>
   <body>
     <!-- The Angular application will be bootstrapped into this element. -->

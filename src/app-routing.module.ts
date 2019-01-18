@@ -2,7 +2,7 @@ import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {AngularJsRouteModule} from '@angular/router/upgrade';
 
-import {ROUTES} from './angular-js/routes';
+import {ROUTES} from './angular-js/app.routes';
 
 export const helloModuleId = './hello-world/hello-world.module#HelloWorldModule';
 export const todosModuleId = './todos/todos.module#TodosModule';
